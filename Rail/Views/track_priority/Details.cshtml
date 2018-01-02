@@ -1,0 +1,37 @@
+﻿@model Rail.Models.track_priority
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>track_priority</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Priorities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Priorities)
+        </dd>
+
+    </dl>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.track_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.track_status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Priorities }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

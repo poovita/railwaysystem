@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Rail.Models.arsikere>
+@{
+    ViewBag.Title = "Affected_trains";
+
+}
+
+
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <table style="margin-top: 20px;">
+        <tr>
+            <td> stn1: <input type="text" id="stn1" name="stn1"><br></td>
+            <td> stn2: <input type="text" id="stn2" name="stn2" /><br></td>           
+            <td>
+            Select start time:
+            <input type="time" name="star_t" id="star_t">
+          
+        </td>
+            <td>
+                Select end time:
+                <input type="time" name="end_t" id="end_t">
+            
+            </td>
+            <td> <input type="submit" id="affected_stn" value="Affected Trains"></td>
+        </tr>
+    </table>
+    <div>
+    <table id="tblProducts" class="tblProducts">
+        <thead>
+            <tr>
+                <td align="left" class="productth">Train number<br><br></td>
+                <td align="left" class="productth">Train name <br><br></td>
+               
+            </tr>
+    
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+
+  
+
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+
+        $("#affected_stn").click(function () {
+            var d = new Date();
+    var weekday = new Array(7);
+    weekday[0] = "Su";
+    weekday[1] = "Mo";
+    weekday[2] = "Tu";
+    weekday[3] = "We";
+    weekday[4] = "Th";
+    weekday[5] = "Fr";
+    weekday[6] = "Sa";
+
+    var day_status = weekday[d.getDay()];
+
+   // alert("day " + n);
+            var stn1 = $("#stn1").val();
+            var stn2 = $("#stn2").val();
+            var star_t = $("#star_t").val();
+            var end_t = $("#end_t").val();
+
+            alert("button cvllick" + star_t,end_t);
+            getTrainRoute(stn1, stn2, day_status,star_t,end_t);
+        });
+
+        function getTrainRoute(stn1, stn2, day_status,star_t, end_t) {
+
+            $.ajax({
+                url: "/track_info/tff",
+                type: "POST",
+                dataType: "json",
+                data: { stn1: stn1, stn2: stn2, day_status: day_status,star_t:star_t,end_t:end_t },
+                success: function (data) {
+                    var items = '';
+                    $.each(data, function (i, item) {
+
+                        var rows = "<tr>"
+                + "<td class='prtoducttd'>" + item.Train_number + "</td>"
+                + "<td class='prtoducttd'>" + item.Train_name + "</td>"
+                        + "</tr>";
+                        $('#tblProducts tbody').append(rows);
+                    });
+                  // console.log(data);
+
+
+                },
+                error: function (error) {
+                    console.log("failed in opening XML file !!!");
+
+                }
+            });
+        }
+    });
+
+</script>

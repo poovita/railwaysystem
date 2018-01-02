@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="up_trainModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="up_11006">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_11022">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_11302">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_14805">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_16210">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_16332">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_16340">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_16506">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_16508">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_16532">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_16534">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_16587">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_16614">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_19567">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_22498">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityType Name="up_82653">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="int" Nullable="false" />
+          <Property Name="Station_code" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+        </EntityType>
+        <EntityContainer Name="up_trainModelStoreContainer">
+          <EntitySet Name="up_11006" EntityType="Self.up_11006" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_11022" EntityType="Self.up_11022" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_11302" EntityType="Self.up_11302" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_14805" EntityType="Self.up_14805" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_16210" EntityType="Self.up_16210" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_16332" EntityType="Self.up_16332" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_16340" EntityType="Self.up_16340" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_16506" EntityType="Self.up_16506" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_16508" EntityType="Self.up_16508" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_16532" EntityType="Self.up_16532" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_16534" EntityType="Self.up_16534" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_16587" EntityType="Self.up_16587" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_16614" EntityType="Self.up_16614" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_19567" EntityType="Self.up_19567" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_22498" EntityType="Self.up_22498" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="up_82653" EntityType="Self.up_82653" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="up_trainModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="up_11006">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_11022">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_11302">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_14805">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_16210">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_16332">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_16340">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_16506">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_16508">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_16532">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_16534">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_16587">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_16614">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_19567">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_22498">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityType Name="up_82653">
+          <Key>
+            <PropertyRef Name="Sr_no" />
+          </Key>
+          <Property Name="Sr_no" Type="Int32" Nullable="false" />
+          <Property Name="Station_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="up_trainEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="up_11006" EntityType="Self.up_11006" />
+          <EntitySet Name="up_11022" EntityType="Self.up_11022" />
+          <EntitySet Name="up_11302" EntityType="Self.up_11302" />
+          <EntitySet Name="up_14805" EntityType="Self.up_14805" />
+          <EntitySet Name="up_16210" EntityType="Self.up_16210" />
+          <EntitySet Name="up_16332" EntityType="Self.up_16332" />
+          <EntitySet Name="up_16340" EntityType="Self.up_16340" />
+          <EntitySet Name="up_16506" EntityType="Self.up_16506" />
+          <EntitySet Name="up_16508" EntityType="Self.up_16508" />
+          <EntitySet Name="up_16532" EntityType="Self.up_16532" />
+          <EntitySet Name="up_16534" EntityType="Self.up_16534" />
+          <EntitySet Name="up_16587" EntityType="Self.up_16587" />
+          <EntitySet Name="up_16614" EntityType="Self.up_16614" />
+          <EntitySet Name="up_19567" EntityType="Self.up_19567" />
+          <EntitySet Name="up_22498" EntityType="Self.up_22498" />
+          <EntitySet Name="up_82653" EntityType="Self.up_82653" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="up_trainModelStoreContainer" CdmEntityContainer="up_trainEntities2">
+          <EntitySetMapping Name="up_11006">
+            <EntityTypeMapping TypeName="up_trainModel.up_11006">
+              <MappingFragment StoreEntitySet="up_11006">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_11022">
+            <EntityTypeMapping TypeName="up_trainModel.up_11022">
+              <MappingFragment StoreEntitySet="up_11022">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_11302">
+            <EntityTypeMapping TypeName="up_trainModel.up_11302">
+              <MappingFragment StoreEntitySet="up_11302">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_14805">
+            <EntityTypeMapping TypeName="up_trainModel.up_14805">
+              <MappingFragment StoreEntitySet="up_14805">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_16210">
+            <EntityTypeMapping TypeName="up_trainModel.up_16210">
+              <MappingFragment StoreEntitySet="up_16210">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_16332">
+            <EntityTypeMapping TypeName="up_trainModel.up_16332">
+              <MappingFragment StoreEntitySet="up_16332">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_16340">
+            <EntityTypeMapping TypeName="up_trainModel.up_16340">
+              <MappingFragment StoreEntitySet="up_16340">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_16506">
+            <EntityTypeMapping TypeName="up_trainModel.up_16506">
+              <MappingFragment StoreEntitySet="up_16506">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_16508">
+            <EntityTypeMapping TypeName="up_trainModel.up_16508">
+              <MappingFragment StoreEntitySet="up_16508">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_16532">
+            <EntityTypeMapping TypeName="up_trainModel.up_16532">
+              <MappingFragment StoreEntitySet="up_16532">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_16534">
+            <EntityTypeMapping TypeName="up_trainModel.up_16534">
+              <MappingFragment StoreEntitySet="up_16534">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_16587">
+            <EntityTypeMapping TypeName="up_trainModel.up_16587">
+              <MappingFragment StoreEntitySet="up_16587">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_16614">
+            <EntityTypeMapping TypeName="up_trainModel.up_16614">
+              <MappingFragment StoreEntitySet="up_16614">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_19567">
+            <EntityTypeMapping TypeName="up_trainModel.up_19567">
+              <MappingFragment StoreEntitySet="up_19567">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_22498">
+            <EntityTypeMapping TypeName="up_trainModel.up_22498">
+              <MappingFragment StoreEntitySet="up_22498">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="up_82653">
+            <EntityTypeMapping TypeName="up_trainModel.up_82653">
+              <MappingFragment StoreEntitySet="up_82653">
+                <ScalarProperty Name="Sr_no" ColumnName="Sr_no" />
+                <ScalarProperty Name="Station_code" ColumnName="Station_code" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

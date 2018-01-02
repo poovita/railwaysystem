@@ -1,0 +1,1564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="junctionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="arsikere">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="bangalore">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="bellary">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="chikjajur">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="dadar">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="gadag">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="guntkal">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="hotgi">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="hubli">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="kalyan">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="karjat">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="krishnarajapurm">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="kuruduvadi">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="latur_road">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="londa">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="madgaon">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="miraj">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="panvel">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="pune">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="vasai_road">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="vikarabad">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="wadi">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="Yesvantpur">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Train_name" Type="varchar" MaxLength="50" />
+          <Property Name="Source_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Dest_stn" Type="varchar" MaxLength="10" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Depart" Type="time" Precision="7" />
+          <Property Name="halt" Type="time" Precision="7" />
+          <Property Name="Su" Type="varchar" MaxLength="5" />
+          <Property Name="Mo" Type="varchar" MaxLength="5" />
+          <Property Name="Tu" Type="varchar" MaxLength="5" />
+          <Property Name="We" Type="varchar" MaxLength="5" />
+          <Property Name="Th" Type="varchar" MaxLength="5" />
+          <Property Name="Fr" Type="varchar" MaxLength="5" />
+          <Property Name="Sa" Type="varchar" MaxLength="5" />
+          <Property Name="train_priority" Type="varchar" MaxLength="5" />
+          <Property Name="platform" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityContainer Name="junctionModelStoreContainer">
+          <EntitySet Name="arsikere" EntityType="Self.arsikere" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="bangalore" EntityType="Self.bangalore" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="bellary" EntityType="Self.bellary" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="chikjajur" EntityType="Self.chikjajur" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="dadar" EntityType="Self.dadar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="gadag" EntityType="Self.gadag" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="guntkal" EntityType="Self.guntkal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="hotgi" EntityType="Self.hotgi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="hubli" EntityType="Self.hubli" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="kalyan" EntityType="Self.kalyan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="karjat" EntityType="Self.karjat" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="krishnarajapurm" EntityType="Self.krishnarajapurm" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="kuruduvadi" EntityType="Self.kuruduvadi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="latur_road" EntityType="Self.latur_road" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="londa" EntityType="Self.londa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="madgaon" EntityType="Self.madgaon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="miraj" EntityType="Self.miraj" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="panvel" EntityType="Self.panvel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="pune" EntityType="Self.pune" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="vasai_road" EntityType="Self.vasai_road" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="vikarabad" EntityType="Self.vikarabad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="wadi" EntityType="Self.wadi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Yesvantpur" EntityType="Self.Yesvantpur" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="junctionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="arsikere">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="bangalore">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="bellary">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="chikjajur">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="dadar">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="gadag">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="guntkal">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="hotgi">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="hubli">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="kalyan">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="karjat">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="krishnarajapurm">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="kuruduvadi">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="latur_road">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="londa">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="madgaon">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="miraj">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="panvel">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="pune">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="vasai_road">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="vikarabad">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="wadi">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Yesvantpur">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Train_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Dest_stn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Depart" Type="Time" Precision="7" />
+          <Property Name="halt" Type="Time" Precision="7" />
+          <Property Name="Su" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Mo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Tu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="We" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Th" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fr" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sa" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="train_priority" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="platform" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="junctionEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="arsikeres" EntityType="Self.arsikere" />
+          <EntitySet Name="bangalores" EntityType="Self.bangalore" />
+          <EntitySet Name="bellaries" EntityType="Self.bellary" />
+          <EntitySet Name="chikjajurs" EntityType="Self.chikjajur" />
+          <EntitySet Name="dadars" EntityType="Self.dadar" />
+          <EntitySet Name="gadags" EntityType="Self.gadag" />
+          <EntitySet Name="guntkals" EntityType="Self.guntkal" />
+          <EntitySet Name="hotgis" EntityType="Self.hotgi" />
+          <EntitySet Name="hublis" EntityType="Self.hubli" />
+          <EntitySet Name="kalyans" EntityType="Self.kalyan" />
+          <EntitySet Name="karjats" EntityType="Self.karjat" />
+          <EntitySet Name="krishnarajapurms" EntityType="Self.krishnarajapurm" />
+          <EntitySet Name="kuruduvadis" EntityType="Self.kuruduvadi" />
+          <EntitySet Name="latur_road" EntityType="Self.latur_road" />
+          <EntitySet Name="londas" EntityType="Self.londa" />
+          <EntitySet Name="madgaons" EntityType="Self.madgaon" />
+          <EntitySet Name="mirajs" EntityType="Self.miraj" />
+          <EntitySet Name="panvels" EntityType="Self.panvel" />
+          <EntitySet Name="punes" EntityType="Self.pune" />
+          <EntitySet Name="vasai_road" EntityType="Self.vasai_road" />
+          <EntitySet Name="vikarabads" EntityType="Self.vikarabad" />
+          <EntitySet Name="wadis" EntityType="Self.wadi" />
+          <EntitySet Name="Yesvantpurs" EntityType="Self.Yesvantpur" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="junctionModelStoreContainer" CdmEntityContainer="junctionEntities">
+          <EntitySetMapping Name="arsikeres">
+            <EntityTypeMapping TypeName="junctionModel.arsikere">
+              <MappingFragment StoreEntitySet="arsikere">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="bangalores">
+            <EntityTypeMapping TypeName="junctionModel.bangalore">
+              <MappingFragment StoreEntitySet="bangalore">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="bellaries">
+            <EntityTypeMapping TypeName="junctionModel.bellary">
+              <MappingFragment StoreEntitySet="bellary">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="chikjajurs">
+            <EntityTypeMapping TypeName="junctionModel.chikjajur">
+              <MappingFragment StoreEntitySet="chikjajur">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dadars">
+            <EntityTypeMapping TypeName="junctionModel.dadar">
+              <MappingFragment StoreEntitySet="dadar">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="gadags">
+            <EntityTypeMapping TypeName="junctionModel.gadag">
+              <MappingFragment StoreEntitySet="gadag">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="guntkals">
+            <EntityTypeMapping TypeName="junctionModel.guntkal">
+              <MappingFragment StoreEntitySet="guntkal">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="hotgis">
+            <EntityTypeMapping TypeName="junctionModel.hotgi">
+              <MappingFragment StoreEntitySet="hotgi">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="hublis">
+            <EntityTypeMapping TypeName="junctionModel.hubli">
+              <MappingFragment StoreEntitySet="hubli">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="kalyans">
+            <EntityTypeMapping TypeName="junctionModel.kalyan">
+              <MappingFragment StoreEntitySet="kalyan">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="karjats">
+            <EntityTypeMapping TypeName="junctionModel.karjat">
+              <MappingFragment StoreEntitySet="karjat">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="krishnarajapurms">
+            <EntityTypeMapping TypeName="junctionModel.krishnarajapurm">
+              <MappingFragment StoreEntitySet="krishnarajapurm">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="kuruduvadis">
+            <EntityTypeMapping TypeName="junctionModel.kuruduvadi">
+              <MappingFragment StoreEntitySet="kuruduvadi">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="latur_road">
+            <EntityTypeMapping TypeName="junctionModel.latur_road">
+              <MappingFragment StoreEntitySet="latur_road">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="londas">
+            <EntityTypeMapping TypeName="junctionModel.londa">
+              <MappingFragment StoreEntitySet="londa">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="madgaons">
+            <EntityTypeMapping TypeName="junctionModel.madgaon">
+              <MappingFragment StoreEntitySet="madgaon">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mirajs">
+            <EntityTypeMapping TypeName="junctionModel.miraj">
+              <MappingFragment StoreEntitySet="miraj">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="panvels">
+            <EntityTypeMapping TypeName="junctionModel.panvel">
+              <MappingFragment StoreEntitySet="panvel">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="punes">
+            <EntityTypeMapping TypeName="junctionModel.pune">
+              <MappingFragment StoreEntitySet="pune">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vasai_road">
+            <EntityTypeMapping TypeName="junctionModel.vasai_road">
+              <MappingFragment StoreEntitySet="vasai_road">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vikarabads">
+            <EntityTypeMapping TypeName="junctionModel.vikarabad">
+              <MappingFragment StoreEntitySet="vikarabad">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="wadis">
+            <EntityTypeMapping TypeName="junctionModel.wadi">
+              <MappingFragment StoreEntitySet="wadi">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Yesvantpurs">
+            <EntityTypeMapping TypeName="junctionModel.Yesvantpur">
+              <MappingFragment StoreEntitySet="Yesvantpur">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Train_name" ColumnName="Train_name" />
+                <ScalarProperty Name="Source_stn" ColumnName="Source_stn" />
+                <ScalarProperty Name="Dest_stn" ColumnName="Dest_stn" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Depart" ColumnName="Depart" />
+                <ScalarProperty Name="halt" ColumnName="halt" />
+                <ScalarProperty Name="Su" ColumnName="Su" />
+                <ScalarProperty Name="Mo" ColumnName="Mo" />
+                <ScalarProperty Name="Tu" ColumnName="Tu" />
+                <ScalarProperty Name="We" ColumnName="We" />
+                <ScalarProperty Name="Th" ColumnName="Th" />
+                <ScalarProperty Name="Fr" ColumnName="Fr" />
+                <ScalarProperty Name="Sa" ColumnName="Sa" />
+                <ScalarProperty Name="train_priority" ColumnName="train_priority" />
+                <ScalarProperty Name="platform" ColumnName="platform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

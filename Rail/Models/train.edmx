@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="trainModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="priority">
+          <Key>
+            <PropertyRef Name="Priority" />
+          </Key>
+          <Property Name="Priority" Type="int" Nullable="false" />
+          <Property Name="train_type" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="schedule">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="int" Nullable="false" />
+          <Property Name="Source_Code" Type="varchar" MaxLength="50" />
+          <Property Name="Destination_code" Type="varchar" MaxLength="50" />
+          <Property Name="schdep" Type="time" Precision="7" />
+          <Property Name="scharr" Type="time" Precision="7" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Day" Type="int" />
+          <Property Name="Priority" Type="int" />
+        </EntityType>
+        <EntityType Name="Station_Code">
+          <Key>
+            <PropertyRef Name="Station_Code" />
+          </Key>
+          <Property Name="Station_Code" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Station_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="longitude" Type="float" Nullable="false" />
+          <Property Name="latitude" Type="float" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'train.dbo.track_info' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="track_info">
+          <Key>
+            <PropertyRef Name="From_stn" />
+            <PropertyRef Name="To_stn" />
+            <PropertyRef Name="Track_route" />
+          </Key>
+          <Property Name="From_stn" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="To_stn" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Track_route" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="track_priority">
+          <Key>
+            <PropertyRef Name="Priorities" />
+          </Key>
+          <Property Name="Priorities" Type="int" Nullable="false" />
+          <Property Name="track_status" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="trainModelStoreContainer">
+          <EntitySet Name="priority" EntityType="Self.priority" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="schedule" EntityType="Self.schedule" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Station_Code" EntityType="Self.Station_Code" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="track_priority" EntityType="Self.track_priority" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="track_info" EntityType="Self.track_info" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [track_info].[From_stn] AS [From_stn], 
+    [track_info].[To_stn] AS [To_stn], 
+    [track_info].[Track_route] AS [Track_route]
+    FROM [dbo].[track_info] AS [track_info]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="trainModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="priority">
+          <Key>
+            <PropertyRef Name="Priority1" />
+          </Key>
+          <Property Name="Priority1" Type="Int32" Nullable="false" />
+          <Property Name="train_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="schedule">
+          <Key>
+            <PropertyRef Name="Train_number" />
+          </Key>
+          <Property Name="Train_number" Type="Int32" Nullable="false" />
+          <Property Name="Source_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Destination_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="schdep" Type="Time" Precision="7" />
+          <Property Name="scharr" Type="Time" Precision="7" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Day" Type="Int32" />
+          <Property Name="Priority" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Station_Code">
+          <Key>
+            <PropertyRef Name="Station_Code1" />
+          </Key>
+          <Property Name="Station_Code1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Station_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="longitude" Type="Double" Nullable="false" />
+          <Property Name="latitude" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="track_priority">
+          <Key>
+            <PropertyRef Name="Priorities" />
+          </Key>
+          <Property Name="Priorities" Type="Int32" Nullable="false" />
+          <Property Name="track_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="track_info">
+          <Key>
+            <PropertyRef Name="From_stn" />
+            <PropertyRef Name="To_stn" />
+            <PropertyRef Name="Track_route" />
+          </Key>
+          <Property Name="From_stn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="To_stn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Track_route" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="trainEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="priorities" EntityType="Self.priority" />
+          <EntitySet Name="schedules" EntityType="Self.schedule" />
+          <EntitySet Name="Station_Code" EntityType="Self.Station_Code" />
+          <EntitySet Name="track_priority" EntityType="Self.track_priority" />
+          <EntitySet Name="track_info" EntityType="Self.track_info" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="trainModelStoreContainer" CdmEntityContainer="trainEntities">
+          <EntitySetMapping Name="priorities">
+            <EntityTypeMapping TypeName="trainModel.priority">
+              <MappingFragment StoreEntitySet="priority">
+                <ScalarProperty Name="Priority1" ColumnName="Priority" />
+                <ScalarProperty Name="train_type" ColumnName="train_type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="schedules">
+            <EntityTypeMapping TypeName="trainModel.schedule">
+              <MappingFragment StoreEntitySet="schedule">
+                <ScalarProperty Name="Train_number" ColumnName="Train_number" />
+                <ScalarProperty Name="Source_Code" ColumnName="Source_Code" />
+                <ScalarProperty Name="Destination_code" ColumnName="Destination_code" />
+                <ScalarProperty Name="schdep" ColumnName="schdep" />
+                <ScalarProperty Name="scharr" ColumnName="scharr" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Station_Code">
+            <EntityTypeMapping TypeName="trainModel.Station_Code">
+              <MappingFragment StoreEntitySet="Station_Code">
+                <ScalarProperty Name="Station_Code1" ColumnName="Station_Code" />
+                <ScalarProperty Name="Station_name" ColumnName="Station_name" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="track_priority">
+            <EntityTypeMapping TypeName="trainModel.track_priority">
+              <MappingFragment StoreEntitySet="track_priority">
+                <ScalarProperty Name="Priorities" ColumnName="Priorities" />
+                <ScalarProperty Name="track_status" ColumnName="track_status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="track_info">
+            <EntityTypeMapping TypeName="trainModel.track_info">
+              <MappingFragment StoreEntitySet="track_info">
+                <ScalarProperty Name="From_stn" ColumnName="From_stn" />
+                <ScalarProperty Name="To_stn" ColumnName="To_stn" />
+                <ScalarProperty Name="Track_route" ColumnName="Track_route" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

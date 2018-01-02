@@ -1,0 +1,123 @@
+﻿@model IEnumerable<Rail.Models.vasai_road>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Train_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Train_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Source_stn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dest_stn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Arrival)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Depart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.halt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Su)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.We)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Th)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.train_priority)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.platform)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Train_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Train_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Source_stn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dest_stn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Arrival)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Depart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.halt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Su)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.We)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Th)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.train_priority)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.platform)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Train_number }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Train_number }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Train_number })
+        </td>
+    </tr>
+}
+
+</table>

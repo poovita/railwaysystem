@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Rail.Models.schedule>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Train_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Source_Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Destination_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.schdep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.scharr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Distance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Day)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Priority)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Train_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Source_Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Destination_code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.schdep)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.scharr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Distance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Day)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Priority)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Train_number }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Train_number }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Train_number })
+        </td>
+    </tr>
+}
+
+</table>

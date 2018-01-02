@@ -52,6 +52,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -168,14 +170,318 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\down_train\down_11005Controller.cs" />
+    <Compile Include="Controllers\down_train\down_11013Controller.cs" />
+    <Compile Include="Controllers\down_train\down_11021Controller.cs" />
+    <Compile Include="Controllers\down_train\down_11301Controller.cs" />
+    <Compile Include="Controllers\down_train\down_14806Controller.cs" />
+    <Compile Include="Controllers\down_train\down_16209Controller.cs" />
+    <Compile Include="Controllers\down_train\down_16331Controller.cs" />
+    <Compile Include="Controllers\down_train\down_16339Controller.cs" />
+    <Compile Include="Controllers\down_train\down_16505Controller.cs" />
+    <Compile Include="Controllers\down_train\down_16507Controller.cs" />
+    <Compile Include="Controllers\down_train\down_16531Controller.cs" />
+    <Compile Include="Controllers\down_train\down_16533Controller.cs" />
+    <Compile Include="Controllers\down_train\down_16588Controller.cs" />
+    <Compile Include="Controllers\down_train\down_16613Controller.cs" />
+    <Compile Include="Controllers\down_train\down_19568Controller.cs" />
+    <Compile Include="Controllers\down_train\down_22497Controller.cs" />
+    <Compile Include="Controllers\down_train\down_82654Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\junction\arsikeresController.cs" />
+    <Compile Include="Controllers\junction\bangaloresController.cs" />
+    <Compile Include="Controllers\junction\bellariesController.cs" />
+    <Compile Include="Controllers\junction\chikjajursController.cs" />
+    <Compile Include="Controllers\junction\dadarsController.cs" />
+    <Compile Include="Controllers\junction\gadagsController.cs" />
+    <Compile Include="Controllers\junction\guntkalsController.cs" />
+    <Compile Include="Controllers\junction\hotgisController.cs" />
+    <Compile Include="Controllers\junction\hublisController.cs" />
+    <Compile Include="Controllers\junction\kalyansController.cs" />
+    <Compile Include="Controllers\junction\karjatsController.cs" />
+    <Compile Include="Controllers\junction\krishnarajapurmsController.cs" />
+    <Compile Include="Controllers\junction\kuruduvadisController.cs" />
+    <Compile Include="Controllers\junction\latur_roadController.cs" />
+    <Compile Include="Controllers\junction\londasController.cs" />
+    <Compile Include="Controllers\junction\madgaonsController.cs" />
+    <Compile Include="Controllers\junction\mirajsController.cs" />
+    <Compile Include="Controllers\junction\panvelsController.cs" />
+    <Compile Include="Controllers\junction\punesController.cs" />
+    <Compile Include="Controllers\junction\vasai_roadController.cs" />
+    <Compile Include="Controllers\junction\vikarabadsController.cs" />
+    <Compile Include="Controllers\junction\wadisController.cs" />
+    <Compile Include="Controllers\junction\YesvantpursController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\train\prioritiesController.cs" />
+    <Compile Include="Controllers\train\schedulesController.cs" />
+    <Compile Include="Controllers\train\Station_CodeController.cs" />
+    <Compile Include="Controllers\train\track_infoController.cs" />
+    <Compile Include="Controllers\train\track_priorityController.cs" />
+    <Compile Include="Controllers\up_train\up_11006Controller.cs" />
+    <Compile Include="Controllers\up_train\up_11022Controller.cs" />
+    <Compile Include="Controllers\up_train\up_11302Controller.cs" />
+    <Compile Include="Controllers\up_train\up_14805Controller.cs" />
+    <Compile Include="Controllers\up_train\up_16210Controller.cs" />
+    <Compile Include="Controllers\up_train\up_16332Controller.cs" />
+    <Compile Include="Controllers\up_train\up_16340Controller.cs" />
+    <Compile Include="Controllers\up_train\up_16506Controller.cs" />
+    <Compile Include="Controllers\up_train\up_16508Controller.cs" />
+    <Compile Include="Controllers\up_train\up_16532Controller.cs" />
+    <Compile Include="Controllers\up_train\up_16534Controller.cs" />
+    <Compile Include="Controllers\up_train\up_16587Controller.cs" />
+    <Compile Include="Controllers\up_train\up_16614Controller.cs" />
+    <Compile Include="Controllers\up_train\up_19567Controller.cs" />
+    <Compile Include="Controllers\up_train\up_22498Controller.cs" />
+    <Compile Include="Controllers\up_train\up_82653Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\arsikere.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\bangalore.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\bellary.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\chikjajur.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dadar.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_11005.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_11013.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_11021.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_11301.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_14806.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_16209.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_16331.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_16339.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_16505.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_16507.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_16531.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_16533.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_16588.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_16613.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_19568.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_22497.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_82654.cs">
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_train.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>down_train.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_train.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>down_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\down_train.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>down_train.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\gadag.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\guntkal.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\hotgi.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\hubli.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\junction.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>junction.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\junction.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\junction.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>junction.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\kalyan.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\karjat.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\krishnarajapurm.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\kuruduvadi.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\latur_road.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\londa.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\madgaon.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\miraj.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\panvel.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\priority.cs">
+      <DependentUpon>train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pune.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\schedule.cs">
+      <DependentUpon>train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Station_Code.cs">
+      <DependentUpon>train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\track_info.cs">
+      <DependentUpon>train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\track_priority.cs">
+      <DependentUpon>train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\train.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>train.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\train.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\train.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>train.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_11006.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_11022.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_11302.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_14805.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_16210.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_16332.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_16340.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_16506.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_16508.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_16532.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_16534.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_16587.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_16614.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_19567.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_22498.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_82653.cs">
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_train.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>up_train.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_train.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>up_train.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\up_train.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>up_train.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vasai_road.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vikarabad.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\wadi.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Yesvantpur.cs">
+      <DependentUpon>junction.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -186,8 +492,76 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\down_train.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>down_train.edmx</DependentUpon>
+      <LastGenOutput>down_train.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\down_train.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>down_train.edmx</DependentUpon>
+      <LastGenOutput>down_train.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\junction.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>junction.edmx</DependentUpon>
+      <LastGenOutput>junction.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\junction.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>junction.edmx</DependentUpon>
+      <LastGenOutput>junction.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\train.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>train.edmx</DependentUpon>
+      <LastGenOutput>train.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\train.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>train.edmx</DependentUpon>
+      <LastGenOutput>train.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\up_train.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>up_train.edmx</DependentUpon>
+      <LastGenOutput>up_train.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\up_train.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>up_train.edmx</DependentUpon>
+      <LastGenOutput>up_train.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\train.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>train.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\train.edmx.diagram">
+      <DependentUpon>train.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\junction.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>junction.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\junction.edmx.diagram">
+      <DependentUpon>junction.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\up_train.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>up_train.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\up_train.edmx.diagram">
+      <DependentUpon>up_train.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\down_train.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>down_train.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\down_train.edmx.diagram">
+      <DependentUpon>down_train.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -234,6 +608,313 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\priorities\Create.cshtml" />
+    <Content Include="Views\priorities\Delete.cshtml" />
+    <Content Include="Views\priorities\Details.cshtml" />
+    <Content Include="Views\priorities\Edit.cshtml" />
+    <Content Include="Views\priorities\Index.cshtml" />
+    <Content Include="Views\schedules\Create.cshtml" />
+    <Content Include="Views\schedules\Delete.cshtml" />
+    <Content Include="Views\schedules\Details.cshtml" />
+    <Content Include="Views\schedules\Edit.cshtml" />
+    <Content Include="Views\schedules\Index.cshtml" />
+    <Content Include="Views\Station_Code\Create.cshtml" />
+    <Content Include="Views\Station_Code\Delete.cshtml" />
+    <Content Include="Views\Station_Code\Details.cshtml" />
+    <Content Include="Views\Station_Code\Edit.cshtml" />
+    <Content Include="Views\Station_Code\Index.cshtml" />
+    <Content Include="Views\track_info\Create.cshtml" />
+    <Content Include="Views\track_info\Delete.cshtml" />
+    <Content Include="Views\track_info\Details.cshtml" />
+    <Content Include="Views\track_info\Edit.cshtml" />
+    <Content Include="Views\track_info\Index.cshtml" />
+    <Content Include="Views\track_priority\Create.cshtml" />
+    <Content Include="Views\track_priority\Delete.cshtml" />
+    <Content Include="Views\track_priority\Details.cshtml" />
+    <Content Include="Views\track_priority\Edit.cshtml" />
+    <Content Include="Views\track_priority\Index.cshtml" />
+    <Content Include="Views\arsikeres\Create.cshtml" />
+    <Content Include="Views\arsikeres\Delete.cshtml" />
+    <Content Include="Views\arsikeres\Details.cshtml" />
+    <Content Include="Views\arsikeres\Edit.cshtml" />
+    <Content Include="Views\arsikeres\Index.cshtml" />
+    <Content Include="Views\bangalores\Create.cshtml" />
+    <Content Include="Views\bangalores\Delete.cshtml" />
+    <Content Include="Views\bangalores\Details.cshtml" />
+    <Content Include="Views\bangalores\Edit.cshtml" />
+    <Content Include="Views\bangalores\Index.cshtml" />
+    <Content Include="Views\bellaries\Create.cshtml" />
+    <Content Include="Views\bellaries\Delete.cshtml" />
+    <Content Include="Views\bellaries\Details.cshtml" />
+    <Content Include="Views\bellaries\Edit.cshtml" />
+    <Content Include="Views\bellaries\Index.cshtml" />
+    <Content Include="Views\chikjajurs\Create.cshtml" />
+    <Content Include="Views\chikjajurs\Delete.cshtml" />
+    <Content Include="Views\chikjajurs\Details.cshtml" />
+    <Content Include="Views\chikjajurs\Edit.cshtml" />
+    <Content Include="Views\chikjajurs\Index.cshtml" />
+    <Content Include="Views\dadars\Create.cshtml" />
+    <Content Include="Views\dadars\Delete.cshtml" />
+    <Content Include="Views\dadars\Details.cshtml" />
+    <Content Include="Views\dadars\Edit.cshtml" />
+    <Content Include="Views\dadars\Index.cshtml" />
+    <Content Include="Views\gadags\Create.cshtml" />
+    <Content Include="Views\gadags\Delete.cshtml" />
+    <Content Include="Views\gadags\Details.cshtml" />
+    <Content Include="Views\gadags\Edit.cshtml" />
+    <Content Include="Views\gadags\Index.cshtml" />
+    <Content Include="Views\guntkals\Create.cshtml" />
+    <Content Include="Views\guntkals\Delete.cshtml" />
+    <Content Include="Views\guntkals\Details.cshtml" />
+    <Content Include="Views\guntkals\Edit.cshtml" />
+    <Content Include="Views\guntkals\Index.cshtml" />
+    <Content Include="Views\hotgis\Create.cshtml" />
+    <Content Include="Views\hotgis\Delete.cshtml" />
+    <Content Include="Views\hotgis\Details.cshtml" />
+    <Content Include="Views\hotgis\Edit.cshtml" />
+    <Content Include="Views\hotgis\Index.cshtml" />
+    <Content Include="Views\hublis\Create.cshtml" />
+    <Content Include="Views\hublis\Delete.cshtml" />
+    <Content Include="Views\hublis\Details.cshtml" />
+    <Content Include="Views\hublis\Edit.cshtml" />
+    <Content Include="Views\hublis\Index.cshtml" />
+    <Content Include="Views\kalyans\Create.cshtml" />
+    <Content Include="Views\kalyans\Delete.cshtml" />
+    <Content Include="Views\kalyans\Details.cshtml" />
+    <Content Include="Views\kalyans\Edit.cshtml" />
+    <Content Include="Views\kalyans\Index.cshtml" />
+    <Content Include="Views\karjats\Create.cshtml" />
+    <Content Include="Views\karjats\Delete.cshtml" />
+    <Content Include="Views\karjats\Details.cshtml" />
+    <Content Include="Views\karjats\Edit.cshtml" />
+    <Content Include="Views\karjats\Index.cshtml" />
+    <Content Include="Views\krishnarajapurms\Create.cshtml" />
+    <Content Include="Views\krishnarajapurms\Delete.cshtml" />
+    <Content Include="Views\krishnarajapurms\Details.cshtml" />
+    <Content Include="Views\krishnarajapurms\Edit.cshtml" />
+    <Content Include="Views\krishnarajapurms\Index.cshtml" />
+    <Content Include="Views\kuruduvadis\Create.cshtml" />
+    <Content Include="Views\kuruduvadis\Delete.cshtml" />
+    <Content Include="Views\kuruduvadis\Details.cshtml" />
+    <Content Include="Views\kuruduvadis\Edit.cshtml" />
+    <Content Include="Views\kuruduvadis\Index.cshtml" />
+    <Content Include="Views\latur_road\Create.cshtml" />
+    <Content Include="Views\latur_road\Delete.cshtml" />
+    <Content Include="Views\latur_road\Details.cshtml" />
+    <Content Include="Views\latur_road\Edit.cshtml" />
+    <Content Include="Views\latur_road\Index.cshtml" />
+    <Content Include="Views\londas\Create.cshtml" />
+    <Content Include="Views\londas\Delete.cshtml" />
+    <Content Include="Views\londas\Details.cshtml" />
+    <Content Include="Views\londas\Edit.cshtml" />
+    <Content Include="Views\londas\Index.cshtml" />
+    <Content Include="Views\madgaons\Create.cshtml" />
+    <Content Include="Views\madgaons\Delete.cshtml" />
+    <Content Include="Views\madgaons\Details.cshtml" />
+    <Content Include="Views\madgaons\Edit.cshtml" />
+    <Content Include="Views\madgaons\Index.cshtml" />
+    <Content Include="Views\mirajs\Create.cshtml" />
+    <Content Include="Views\mirajs\Delete.cshtml" />
+    <Content Include="Views\mirajs\Details.cshtml" />
+    <Content Include="Views\mirajs\Edit.cshtml" />
+    <Content Include="Views\mirajs\Index.cshtml" />
+    <Content Include="Views\panvels\Create.cshtml" />
+    <Content Include="Views\panvels\Delete.cshtml" />
+    <Content Include="Views\panvels\Details.cshtml" />
+    <Content Include="Views\panvels\Edit.cshtml" />
+    <Content Include="Views\panvels\Index.cshtml" />
+    <Content Include="Views\punes\Create.cshtml" />
+    <Content Include="Views\punes\Delete.cshtml" />
+    <Content Include="Views\punes\Details.cshtml" />
+    <Content Include="Views\punes\Edit.cshtml" />
+    <Content Include="Views\punes\Index.cshtml" />
+    <Content Include="Views\vasai_road\Create.cshtml" />
+    <Content Include="Views\vasai_road\Delete.cshtml" />
+    <Content Include="Views\vasai_road\Details.cshtml" />
+    <Content Include="Views\vasai_road\Edit.cshtml" />
+    <Content Include="Views\vasai_road\Index.cshtml" />
+    <Content Include="Views\vikarabads\Create.cshtml" />
+    <Content Include="Views\vikarabads\Delete.cshtml" />
+    <Content Include="Views\vikarabads\Details.cshtml" />
+    <Content Include="Views\vikarabads\Edit.cshtml" />
+    <Content Include="Views\vikarabads\Index.cshtml" />
+    <Content Include="Views\wadis\Create.cshtml" />
+    <Content Include="Views\wadis\Delete.cshtml" />
+    <Content Include="Views\wadis\Details.cshtml" />
+    <Content Include="Views\wadis\Edit.cshtml" />
+    <Content Include="Views\wadis\Index.cshtml" />
+    <Content Include="Views\Yesvantpurs\Create.cshtml" />
+    <Content Include="Views\Yesvantpurs\Delete.cshtml" />
+    <Content Include="Views\Yesvantpurs\Details.cshtml" />
+    <Content Include="Views\Yesvantpurs\Edit.cshtml" />
+    <Content Include="Views\Yesvantpurs\Index.cshtml" />
+    <Content Include="Views\up_11006\Create.cshtml" />
+    <Content Include="Views\up_11006\Delete.cshtml" />
+    <Content Include="Views\up_11006\Details.cshtml" />
+    <Content Include="Views\up_11006\Edit.cshtml" />
+    <Content Include="Views\up_11006\Index.cshtml" />
+    <Content Include="Views\up_11022\Create.cshtml" />
+    <Content Include="Views\up_11022\Delete.cshtml" />
+    <Content Include="Views\up_11022\Details.cshtml" />
+    <Content Include="Views\up_11022\Edit.cshtml" />
+    <Content Include="Views\up_11022\Index.cshtml" />
+    <Content Include="Views\up_11302\Create.cshtml" />
+    <Content Include="Views\up_11302\Delete.cshtml" />
+    <Content Include="Views\up_11302\Details.cshtml" />
+    <Content Include="Views\up_11302\Edit.cshtml" />
+    <Content Include="Views\up_11302\Index.cshtml" />
+    <Content Include="Views\up_14805\Create.cshtml" />
+    <Content Include="Views\up_14805\Delete.cshtml" />
+    <Content Include="Views\up_14805\Details.cshtml" />
+    <Content Include="Views\up_14805\Edit.cshtml" />
+    <Content Include="Views\up_14805\Index.cshtml" />
+    <Content Include="Views\up_16210\Create.cshtml" />
+    <Content Include="Views\up_16210\Delete.cshtml" />
+    <Content Include="Views\up_16210\Details.cshtml" />
+    <Content Include="Views\up_16210\Edit.cshtml" />
+    <Content Include="Views\up_16210\Index.cshtml" />
+    <Content Include="Views\up_16332\Create.cshtml" />
+    <Content Include="Views\up_16332\Delete.cshtml" />
+    <Content Include="Views\up_16332\Details.cshtml" />
+    <Content Include="Views\up_16332\Edit.cshtml" />
+    <Content Include="Views\up_16332\Index.cshtml" />
+    <Content Include="Views\up_16340\Create.cshtml" />
+    <Content Include="Views\up_16340\Delete.cshtml" />
+    <Content Include="Views\up_16340\Details.cshtml" />
+    <Content Include="Views\up_16340\Edit.cshtml" />
+    <Content Include="Views\up_16340\Index.cshtml" />
+    <Content Include="Views\up_16506\Create.cshtml" />
+    <Content Include="Views\up_16506\Delete.cshtml" />
+    <Content Include="Views\up_16506\Details.cshtml" />
+    <Content Include="Views\up_16506\Edit.cshtml" />
+    <Content Include="Views\up_16506\Index.cshtml" />
+    <Content Include="Views\up_16508\Create.cshtml" />
+    <Content Include="Views\up_16508\Delete.cshtml" />
+    <Content Include="Views\up_16508\Details.cshtml" />
+    <Content Include="Views\up_16508\Edit.cshtml" />
+    <Content Include="Views\up_16508\Index.cshtml" />
+    <Content Include="Views\up_16532\Create.cshtml" />
+    <Content Include="Views\up_16532\Delete.cshtml" />
+    <Content Include="Views\up_16532\Details.cshtml" />
+    <Content Include="Views\up_16532\Edit.cshtml" />
+    <Content Include="Views\up_16532\Index.cshtml" />
+    <Content Include="Views\up_16534\Create.cshtml" />
+    <Content Include="Views\up_16534\Delete.cshtml" />
+    <Content Include="Views\up_16534\Details.cshtml" />
+    <Content Include="Views\up_16534\Edit.cshtml" />
+    <Content Include="Views\up_16534\Index.cshtml" />
+    <Content Include="Views\up_16587\Create.cshtml" />
+    <Content Include="Views\up_16587\Delete.cshtml" />
+    <Content Include="Views\up_16587\Details.cshtml" />
+    <Content Include="Views\up_16587\Edit.cshtml" />
+    <Content Include="Views\up_16587\Index.cshtml" />
+    <Content Include="Views\up_16614\Create.cshtml" />
+    <Content Include="Views\up_16614\Delete.cshtml" />
+    <Content Include="Views\up_16614\Details.cshtml" />
+    <Content Include="Views\up_16614\Edit.cshtml" />
+    <Content Include="Views\up_16614\Index.cshtml" />
+    <Content Include="Views\up_19567\Create.cshtml" />
+    <Content Include="Views\up_19567\Delete.cshtml" />
+    <Content Include="Views\up_19567\Details.cshtml" />
+    <Content Include="Views\up_19567\Edit.cshtml" />
+    <Content Include="Views\up_19567\Index.cshtml" />
+    <Content Include="Views\up_22498\Create.cshtml" />
+    <Content Include="Views\up_22498\Delete.cshtml" />
+    <Content Include="Views\up_22498\Details.cshtml" />
+    <Content Include="Views\up_22498\Edit.cshtml" />
+    <Content Include="Views\up_22498\Index.cshtml" />
+    <Content Include="Views\up_82653\Create.cshtml" />
+    <Content Include="Views\up_82653\Delete.cshtml" />
+    <Content Include="Views\up_82653\Details.cshtml" />
+    <Content Include="Views\up_82653\Edit.cshtml" />
+    <Content Include="Views\up_82653\Index.cshtml" />
+    <Content Include="Views\down_11005\Create.cshtml" />
+    <Content Include="Views\down_11005\Delete.cshtml" />
+    <Content Include="Views\down_11005\Details.cshtml" />
+    <Content Include="Views\down_11005\Edit.cshtml" />
+    <Content Include="Views\down_11005\Index.cshtml" />
+    <Content Include="Views\down_11013\Create.cshtml" />
+    <Content Include="Views\down_11013\Delete.cshtml" />
+    <Content Include="Views\down_11013\Details.cshtml" />
+    <Content Include="Views\down_11013\Edit.cshtml" />
+    <Content Include="Views\down_11013\Index.cshtml" />
+    <Content Include="Views\down_11021\Create.cshtml" />
+    <Content Include="Views\down_11021\Delete.cshtml" />
+    <Content Include="Views\down_11021\Details.cshtml" />
+    <Content Include="Views\down_11021\Edit.cshtml" />
+    <Content Include="Views\down_11021\Index.cshtml" />
+    <Content Include="Views\down_11301\Create.cshtml" />
+    <Content Include="Views\down_11301\Delete.cshtml" />
+    <Content Include="Views\down_11301\Details.cshtml" />
+    <Content Include="Views\down_11301\Edit.cshtml" />
+    <Content Include="Views\down_11301\Index.cshtml" />
+    <Content Include="Views\down_14806\Create.cshtml" />
+    <Content Include="Views\down_14806\Delete.cshtml" />
+    <Content Include="Views\down_14806\Details.cshtml" />
+    <Content Include="Views\down_14806\Edit.cshtml" />
+    <Content Include="Views\down_14806\Index.cshtml" />
+    <Content Include="Views\down_16209\Create.cshtml" />
+    <Content Include="Views\down_16209\Delete.cshtml" />
+    <Content Include="Views\down_16209\Details.cshtml" />
+    <Content Include="Views\down_16209\Edit.cshtml" />
+    <Content Include="Views\down_16209\Index.cshtml" />
+    <Content Include="Views\down_16331\Create.cshtml" />
+    <Content Include="Views\down_16331\Delete.cshtml" />
+    <Content Include="Views\down_16331\Details.cshtml" />
+    <Content Include="Views\down_16331\Edit.cshtml" />
+    <Content Include="Views\down_16331\Index.cshtml" />
+    <Content Include="Views\down_16339\Create.cshtml" />
+    <Content Include="Views\down_16339\Delete.cshtml" />
+    <Content Include="Views\down_16339\Details.cshtml" />
+    <Content Include="Views\down_16339\Edit.cshtml" />
+    <Content Include="Views\down_16339\Index.cshtml" />
+    <Content Include="Views\down_16505\Create.cshtml" />
+    <Content Include="Views\down_16505\Delete.cshtml" />
+    <Content Include="Views\down_16505\Details.cshtml" />
+    <Content Include="Views\down_16505\Edit.cshtml" />
+    <Content Include="Views\down_16505\Index.cshtml" />
+    <Content Include="Views\down_16507\Create.cshtml" />
+    <Content Include="Views\down_16507\Delete.cshtml" />
+    <Content Include="Views\down_16507\Details.cshtml" />
+    <Content Include="Views\down_16507\Edit.cshtml" />
+    <Content Include="Views\down_16507\Index.cshtml" />
+    <Content Include="Views\down_16531\Create.cshtml" />
+    <Content Include="Views\down_16531\Delete.cshtml" />
+    <Content Include="Views\down_16531\Details.cshtml" />
+    <Content Include="Views\down_16531\Edit.cshtml" />
+    <Content Include="Views\down_16531\Index.cshtml" />
+    <Content Include="Views\down_16533\Create.cshtml" />
+    <Content Include="Views\down_16533\Delete.cshtml" />
+    <Content Include="Views\down_16533\Details.cshtml" />
+    <Content Include="Views\down_16533\Edit.cshtml" />
+    <Content Include="Views\down_16533\Index.cshtml" />
+    <Content Include="Views\down_16588\Create.cshtml" />
+    <Content Include="Views\down_16588\Delete.cshtml" />
+    <Content Include="Views\down_16588\Details.cshtml" />
+    <Content Include="Views\down_16588\Edit.cshtml" />
+    <Content Include="Views\down_16588\Index.cshtml" />
+    <Content Include="Views\down_22497\Create.cshtml" />
+    <Content Include="Views\down_22497\Delete.cshtml" />
+    <Content Include="Views\down_22497\Details.cshtml" />
+    <Content Include="Views\down_22497\Edit.cshtml" />
+    <Content Include="Views\down_22497\Index.cshtml" />
+    <Content Include="Views\down_16613\Create.cshtml" />
+    <Content Include="Views\down_16613\Delete.cshtml" />
+    <Content Include="Views\down_16613\Details.cshtml" />
+    <Content Include="Views\down_16613\Edit.cshtml" />
+    <Content Include="Views\down_16613\Index.cshtml" />
+    <Content Include="Views\down_19568\Create.cshtml" />
+    <Content Include="Views\down_19568\Delete.cshtml" />
+    <Content Include="Views\down_19568\Details.cshtml" />
+    <Content Include="Views\down_19568\Edit.cshtml" />
+    <Content Include="Views\down_19568\Index.cshtml" />
+    <Content Include="Views\down_82654\Create.cshtml" />
+    <Content Include="Views\down_82654\Delete.cshtml" />
+    <Content Include="Views\down_82654\Details.cshtml" />
+    <Content Include="Views\down_82654\Edit.cshtml" />
+    <Content Include="Views\down_82654\Index.cshtml" />
+    <Content Include="Views\track_info\tf.cshtml" />
+    <Content Include="Views\track_info\tff.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,6 +926,9 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

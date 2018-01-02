@@ -1,0 +1,145 @@
+﻿@model Rail.Models.dadar
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>dadar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Train_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Train_number)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Train_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Train_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Source_stn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Source_stn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dest_stn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dest_stn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Arrival)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Arrival)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Depart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Depart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.halt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.halt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Su)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Su)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.We)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.We)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Th)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Th)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.train_priority)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.train_priority)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.platform)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.platform)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Train_number }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

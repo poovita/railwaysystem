@@ -1,0 +1,42 @@
+﻿@model Rail.Models.track_info
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>track_info</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.From_stn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.To_stn)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Track_route)
+        </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.From_stn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.To_stn)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Track_route)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
